@@ -1,0 +1,83 @@
+/* Existing styles */
+
+/*This style gives a yellow background to highlighted content */
+.highlight {
+    background-color: yellow;
+  }
+  
+  /*This style gives the p with the color blue*/
+  p {
+    color: blue;
+  }
+  
+  /*This also gives the header own font and its background*/
+  #mainHeader {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    background-color: #322F2F;
+  }
+  
+  /*This also gives all the h2 with red color*/
+  h2 {
+    color: red;
+  }
+  
+  /*This gives the body a background color of light gray and aligns all text to center*/
+  body {
+    background-color: #4E4C4C;
+    text-align: center;
+  }
+  
+  /*This also edits the photo in the section tag*/
+  section {
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  /*This gives the photo a border aside from the margin in the section*/
+  img {
+    width: 60%;
+    border: 3px solid #B59A94;
+  }
+  
+  /*This gives all in the footor tag a background color and the text aligning in the center*/
+  footer {
+    background-color: #322F2F;
+    text-align: center;
+  }
+  
+  /* New styles */
+  
+  /*New button styled with the .button class and gives a pinkish color to the LearnMore button*/
+  .button {
+    background-color: #FF7877;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /*New sub-header styled with the #subHeader ID and has its own size and color*/
+  #subHeader {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFDEAD;
+    margin-top: 10px;
+  }
+  
+  /*Blockquote styled with the .quote class, this its own colors and styles*/
+  .quote {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #B0E0E6;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: 5px solid #FFDEAD;
+    background-color: #2F4F4F;
+    width: 60%;
+  }
