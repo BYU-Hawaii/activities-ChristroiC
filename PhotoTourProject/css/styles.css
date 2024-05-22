@@ -33,21 +33,31 @@ body.foods {
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
+.container {
+    max-width: 100%; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 0px; /* Add some padding to the sides */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-bottom: 3rem;
 }
 
 header {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
     background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(224, 242, 241);
     padding: 1rem;
     text-align: center;
 }
 
 nav {
-    background: #333;
+    background: #2F4F4F;
 }
 
 nav ul {
@@ -63,6 +73,9 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     color: white;
     text-decoration: none;
     padding: 1rem;
@@ -70,10 +83,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: #2F4F4F;
 }
 
 section {
+    font-family: "Raleway", sans-serif;
+    font-weight: 450;
+    font-style: normal;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.8);
     margin: 1rem auto;
@@ -90,19 +106,21 @@ section {
 
 
 footer {
-    background: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    background: #2F4F4F;
     color: white;
     text-align: center;
     padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
-    top: 94%;
+    /*top: 94%;*/
 
 }
 
 .places-list {
-    list-style-image: url('../images/custom_bullet.png'); /* Custom bullet point */
+   /* list-style-image: url('../images/.png'); /* Custom bullet point */
     padding-left: 1rem;
 }
 
@@ -127,8 +145,10 @@ figure img {
 }
 
 figcaption {
+    font-family:"Raleway", sans-serif ; 
+    font-style:italic; 
+    font-weight:400;
     font-size: 0.9em;
-    font-weight: bold;
     text-align: center;
     color: #555;
     margin-top: 10px;
