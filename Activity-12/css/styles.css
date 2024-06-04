@@ -87,14 +87,14 @@ nav ul li :hover {
     grid-column: 2/4;
 }
 .footer {
+    color: white;
     grid-area: footer;
-    background-color: #904747;
     text-align: center;
-    position: fixed;
     bottom: 0;
+    position: fixed;
     width: 100%;
 }
-@media (min-width: 768x) {
+@media (min-width: 768px) {
         .grid-container-body {
             display: grid;
             grid-template-areas:
