@@ -90,6 +90,9 @@ nav ul li :hover {
     grid-area: footer;
     background-color: #904747;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 @media (min-width: 768x) {
         .grid-container-body {
