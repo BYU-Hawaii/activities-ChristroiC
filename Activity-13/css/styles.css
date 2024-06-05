@@ -4,6 +4,11 @@ body {
     padding: 0;
     padding-bottom: 3rem;
 }
+.container {
+    max-width: 100%; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 0px; /* Add some padding to the sides */
+}
 body.page-two {
     background-image: url('../images/backgroundCEBU.png'); /* Path to your background image */
     background-size: cover; /* Cover the entire page */
@@ -95,7 +100,7 @@ footer {
     background: #2F4F4F;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     position: fixed;
     bottom: 0;
     width: 100%;
