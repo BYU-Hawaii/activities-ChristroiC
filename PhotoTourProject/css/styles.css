@@ -57,7 +57,7 @@ header {
 }
 
 nav {
-    background: #2F4F4F;
+    background-color:rgba(0, 0, 0, ) ;
 }
 
 nav ul {
@@ -66,6 +66,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap; /* Ensure items do not wrap */
 }
 
 nav ul li {
@@ -80,10 +81,15 @@ nav ul li a {
     text-decoration: none;
     padding: 1rem;
     display: block;
+    border: 1px solid white; /* Add border to each navigation item */
+    border-radius: 8px; /* Round the corners */
+    background: rgba(47, 79, 79, 0.7); /* Slightly transparent background */
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav ul li a:hover {
-    background: #2F4F4F;
+    background: rgb(31, 33, 33); /* Change background on hover */
+    color: #f0f0f0; /* Change text color on hover */
 }
 
 section {
@@ -96,38 +102,35 @@ section {
     max-width: 800px;
     border-radius: 10px;
 }
+
 .places-list img {
-    width: 250px; /* Set the width you want for your bullet images */
-    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+    width: 100%; /* Set width to 100% to make images responsive */
+    max-width: 250px; /* Set max width */
+    height: auto; /* Maintain aspect ratio */
     vertical-align: middle; /* Align the images vertically with the text */
     margin: auto;
-
 }
-
 
 footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-small;
-    background: #2F4F4F;
+    background: rgba(47, 79, 79, 0.8); /* Background color with opacity */
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 0.3rem;
     position: fixed;
     bottom: 0;
     width: 100%;
-    /*top: 94%;*/
-
+    height: 1.4rem; /* Set a specific height for the footer */
 }
 
 .places-list {
-   /* list-style-image: url('../images/.png'); /* Custom bullet point */
     padding-left: 1rem;
 }
 
 figure {
     margin: 1rem 0;
     text-align: center;
-    margin: 20px 0;
     padding: 10px;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
@@ -141,13 +144,12 @@ figure img {
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    
 }
 
 figcaption {
-    font-family:"Raleway", sans-serif ; 
-    font-style:italic; 
-    font-weight:400;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    font-weight: 400;
     font-size: 0.9em;
     text-align: center;
     color: #555;
@@ -195,5 +197,21 @@ figcaption {
     }
     nav ul li {
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    header, nav, section, footer {
+        padding: 1rem;
+    }
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    nav ul li {
+        margin: 0.5rem 0; /* Reduce margin between items */
+    }
+    section {
+        padding: 1rem;
+        margin: 0.5rem;
     }
 }
