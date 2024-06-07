@@ -153,41 +153,47 @@ figcaption {
     color: #555;
     margin-top: 10px;
 }
+
+/* Ensure horizontal navigation on all screen sizes */
+@media (min-width: 0px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap; /* Ensure items do not wrap */
+    }
+}
+
 @media (min-width: 768px) {
     .grid-container {
-        grid-template-areas: 
+        display: grid;
+        grid-template-areas:
             "header header"
             "nav main"
             "footer footer";
         grid-template-columns: 1fr 3fr;
     }
-    .nav ul {
-        display: flex;
-
+    nav ul {
+        flex-wrap: nowrap;
     }
-
-    .nav ul li {
+    nav ul li {
         margin-bottom: 0;
     }
 }
+
 @media (min-width: 1024px) {
     .grid-container {
-        grid-template-areas: 
+        grid-template-areas:
             "header header"
-            "nav"
-            "main"
+            "nav main"
             "footer footer";
         grid-template-columns: 1fr 3fr;
     }
-    .nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    nav ul {
         justify-content: center;
-        display: inline;
+        display: flex;
+        flex-wrap: nowrap; /* Ensure items do not wrap */
     }
-
-    .nav ul li {
+    nav ul li {
         margin-bottom: 0;
     }
 }
