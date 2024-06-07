@@ -48,7 +48,6 @@ body.body-page {
 .nav ul li {
     margin: 0;
 }
-
 .nav ul li a {
     text-decoration: none;
     color: #e5c3c3;
@@ -114,7 +113,8 @@ body.body-page {
     .grid-container {
         grid-template-areas: 
             "header header"
-            "nav main"
+            "nav"
+            "main"
             "footer footer";
         grid-template-columns: 1fr 3fr;
     }
