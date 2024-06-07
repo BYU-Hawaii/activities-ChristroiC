@@ -1,0 +1,111 @@
+body.body-page {
+    background-image: url('../images/onepiece.jpg');
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(20, 18, 18);
+    text-decoration: none;
+    padding: 0;
+    display: block;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    gap: 10px;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #590a0a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    padding: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #820808;
+    padding: 1rem;
+    display: block;
+}
+.nav ul li a:hover {
+    background-color: #ae6868;
+}
+.main {
+    grid-area: main;
+    background-color: #f3d5d5;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #4f0a0a;
+    color: #f5f0f0;
+    padding: 10px;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery img {
+        width: calc(33.333% - 10px);
+    }
+}
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+    }
+    .nav ul {
+        display: flex;
+
+    }
+
+    .nav ul li {
+        margin-bottom: 0;
+    }
+}
