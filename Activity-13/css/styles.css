@@ -1,79 +1,148 @@
 body {
-    font-size: 18px;
-    line-height: 1.6;
-    background-color: bisque;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
 }
-button {
-    padding: 10px, 20px;
-    font-size: 18px;
+.container {
+    max-width: 100%; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 0px; /* Add some padding to the sides */
+}
+body.page-two {
+    background-image: url('../images/backgroundCEBU.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+header {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(224, 242, 241);
+    padding: 1rem;
+    text-align: center;
 }
 
-.grid-container-body {
-    display: grid;
-    grid-template-areas:
-        'header'
-        'sidebar'
-        'content'
-        'footer';
-    gap: 10px;
-    padding: 20px;
+nav {
+    background: #2F4F4F;
 }
-.header {
-    grid-area: header;
-    font-family: Raleway;
-    font-size: medium;
-    background-color: cadetblue;
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
     justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #2F4F4F;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+ } 
+ 
+ .menu li {
+    padding: 10px 0;
+ }
+ 
+ .menu a {
+     text-decoration: none;
+     color: white;
+     padding: 10px 15px;
+     display: block;
+ }
+ 
+ .menu a:hover {
+     background-color: #f5f5f5;
+ }
+
+section {
+    font-family: "Raleway", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.places-list img {
+    width: 250px; /* Set the width you want for your bullet images */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+    vertical-align: middle; /* Align the images vertically with the text */
+    margin: auto;
+
+}
+
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    background: #2F4F4F;
+    color: white;
     text-align: center;
+    padding: 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /*top: 94%;*/
+
 }
-.sidebar {
-    grid-area: sidebar;
-    background-color: cadetblue;
+
+.places-list {
+   /* list-style-image: url('../images/.png'); /* Custom bullet point */
+    padding-left: 1rem;
 }
-.content {
-    grid-area: content;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 10px;
-    padding: 30px;
-    row-gap: 10px;
-    column-gap: 20px;
-}
-.grid-item {
-    background-color: cadetblue;
-    color: black;
+
+figure {
+    margin: 1rem 0;
     text-align: center;
-    font-size: 25px;
-    border: 1px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
 }
-.item-1 {
-    grid-column: 1/3;
+
+figure img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    
 }
-.item-2 {
-    grid-column: 3/3;
-    grid-row: auto;
-}
-.item-3 {
-    grid-column: 2/1;
-    grid-row: auto;
-}
-.item-4 {
-    grid-column: 2/4;
-}
-.footer {
-    grid-area: footer;
-    background-color: cadetblue;
+
+figcaption {
+    font-family:"Raleway", sans-serif ; 
+    font-style:italic; 
+    font-weight:400;
+    font-size: 0.9em;
     text-align: center;
+    color: #555;
+    margin-top: 10px;
 }
-@media (min-width: 768x) {
-        .grid-container-body {
-            display: grid;
-            grid-template-areas:
-                'header header header'
-                'sidebar content content'
-                'footer footer footer';
-        }
-}
+
 @media (min-width: 768px) {
     body {
         font-size: 20px;
@@ -81,6 +150,13 @@ button {
     button {
         padding: 15px, 30px;
         font-size: 20px;
+    }
+    .menu li {
+        display: inline-block;
+     }
+  
+    .menu li:not(:last-child) {
+        margin-right: 20px;
     }
 }
 @media (min-width: 1920px) {
@@ -90,12 +166,5 @@ button {
     button {
         padding: 20px, 40px;
         font-size: 24px;
-    }
-    .grid-container-body {
-        display: grid;
-        grid-template-areas:
-            'header header header'
-            'sidebar content content'
-            'footer footer footer';
     }
 }
