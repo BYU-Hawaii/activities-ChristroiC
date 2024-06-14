@@ -1,0 +1,13 @@
+.feedback {
+  color: red;
+  display: none;
+}
+
+.valid-feedback {
+  color: green;
+  display: none; 
+}
+body {
+  background-color: rgb(238, 227, 211);
+}
+@media (min-width 768px)
