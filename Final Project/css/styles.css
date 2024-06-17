@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    margin-bottom: 20px;
+}
+
+.features li:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Mobile-first design approach */
+@media (min-width: 768px) {
+    .hero {
+        background-image: url('hero-bg-desktop.jpg');
+    }
+    .features {
+        flex-direction: row;
+    }
+}
