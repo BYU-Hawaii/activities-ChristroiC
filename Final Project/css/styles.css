@@ -1,23 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
+    background-color: #a73131;
 }
 
 .hero {
-    background-image: url('hero-bg.jpg');
+    background-image: url('hero-bg-mobile.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    flex-direction: column;
+    text-align: center;
 }
 
 .features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .features ul {
@@ -28,6 +32,7 @@ body {
 
 .features li {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .features li:before {
@@ -40,12 +45,24 @@ body {
     margin-right: 10px;
 }
 
-/* Mobile-first design approach */
 @media (min-width: 768px) {
     .hero {
         background-image: url('hero-bg-desktop.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 700px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0 50px;
     }
+
     .features {
         flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .features li {
+        margin-bottom: 0;
     }
 }
