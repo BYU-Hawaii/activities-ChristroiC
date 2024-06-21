@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Materials - OXPlay</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Educational Materials</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home icon"></i>Home</a></li>
+                <li><a href="game.html"><i class="fas fa-gamepad"></i> Play OX</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle icon"></i>About Us</a></li>
+                <li><a href="funFacts.html"><i class="fas fa-lightbulb"></i> Fun Facts</a></li>
+                <li><a href="feedback.html"><i class="fas fa-comments"></i> Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="educational-content">
+            <h2><i class="fas fa-book"></i> Learn and Grow!</h2>
+            <h3>Introduction to Tic Tac Toe</h3>
+            <p>Tic Tac Toe is a two-player game where the goal is to be the first to get three of your marks (X or O) in a row, column, or diagonal. Players take turns placing their marks on a 3x3 grid.</p>
+
+            <h3>Basic Strategies</h3>
+            <ul>
+                <li><i class="fas fa-lightbulb"></i> <strong>Center First:</strong> Always try to take the center if it's available. It gives the maximum number of ways to win.</li>
+                <li><i class="fas fa-lightbulb"></i> <strong>Corner Play:</strong> If the center is taken, try to take one of the corners.</li>
+                <li><i class="fas fa-lightbulb"></i> <strong>Block Opponent:</strong> Always look for the opponent's two marks in a row and block them.</li>
+                <li><i class="fas fa-lightbulb"></i> <strong>Fork:</strong> Create opportunities where you have two ways to win simultaneously.</li>
+            </ul>
+
+            <h3>Advanced Strategies</h3>
+            <ul>
+                <li><i class="fas fa-brain"></i> <strong>Force Moves:</strong> Position your marks to force your opponent into a specific move, setting up your win.</li>
+                <li><i class="fas fa-brain"></i> <strong>Predicting Moves:</strong> Try to predict your opponent’s moves and plan several steps ahead.</li>
+                <li><i class="fas fa-brain"></i> <strong>Minimax Algorithm:</strong> Introduce the concept of the Minimax algorithm, where players minimize the possible loss for a worst-case scenario.</li>
+            </ul>
+
+            <h3>Mathematical Concepts</h3>
+            <ul>
+                <li><i class="fas fa-calculator"></i> <strong>Possible Outcomes:</strong> Discuss the number of possible moves and the concept of permutations and combinations.</li>
+                <li><i class="fas fa-calculator"></i> <strong>Probability:</strong> Calculate the probability of winning from different positions on the board.</li>
+                <li><i class="fas fa-calculator"></i> <strong>Symmetry:</strong> Discuss the symmetry of the board and how it reduces the number of unique positions.</li>
+            </ul>
+        </section>
+
+        <section class="game">
+            <h2><i class="fas fa-gamepad"></i> Play OX(Tic Tac Toe)</h2>
+            <div id="tic-tac-toe-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <button id="reset-button">Reset Game</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 OXPlay. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
