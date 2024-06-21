@@ -20,10 +20,10 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="feedback-form">
-            <h2>We'd Love to Hear From You!</h2>
-            <form action="submit_feedback.php" method="post">
+    <main class="main">
+        <section class="feedback-content">
+            <h2>Feedback Form</h2>
+            <form action="feedback.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -42,7 +42,7 @@
                     <option value="5">5 - Excellent</option>
                 </select>
                 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit-button">Submit</button>
             </form>
         </section>
     </main>

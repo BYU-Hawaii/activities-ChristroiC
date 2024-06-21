@@ -1,0 +1,7 @@
+Submission Date: [Date and Time]
+Name: [User's Name]
+Email: [User's Email]
+Comments: [User's Comments]
+Rating: [User's Rating]
+
+--------------------------------------------

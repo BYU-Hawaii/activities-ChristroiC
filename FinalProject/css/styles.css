@@ -61,38 +61,47 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.feedback-form {
-    max-width: 600px;
+.feedback-content {
+    max-width: 800px;
     margin: 0 auto;
     padding: 1em;
-    background: #f9f9f9;
-    border-radius: 5px;
-    bottom: auto;
-}
-
-.feedback-form label {
-    display: block;
-    margin-bottom: 0.5em;
     text-align: left;
 }
 
-.feedback-form input,
-.feedback-form textarea,
-.feedback-form select {
-    width: 100%;
+.feedback-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-content label {
+    margin: 0.5em 0 0.2em;
+}
+
+.feedback-content input,
+.feedback-content textarea,
+.feedback-content select {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.feedback-form button {
-    background-color: #4CAF50;
+.feedback-content textarea {
+    resize: vertical;
+}
+
+#submit-button {
+    background-color: #f9a825;
     color: white;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-self: flex-start;
+}
+
+#submit-button:hover {
+    background-color: #4CAF50;
 }
 
 .educational-content,
