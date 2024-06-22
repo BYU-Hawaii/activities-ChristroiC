@@ -67,32 +67,62 @@ footer {
     width: 100%;
 }
 .feedback-content {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 1em;
-    text-align: left;
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.feedback-content h2 {
+    margin-top: 0;
+}
 .feedback-content form {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
+.feedback-content .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
 .feedback-content label {
-    margin: 0.5em 0 0.2em;
+    display: block;
+    margin-top: 1em;
 }
 
-.feedback-content input,
-.feedback-content textarea,
-.feedback-content select {
+.feedback-content input, .feedback-content textarea, .feedback-content select {
+    width: 100%;
     padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-top: 0.25em; /* Adjusted to align input box closer to label */
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.feedback-content textarea {
-    resize: vertical;
+.feedback-content button {
+    background-color: #f9a825;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.feedback-content button:hover {
+    background-color: #d1a019;
+}
+
+.feedback-content #feedback-message {
+    margin-top: 1em;
+    color: green;
+    text-align: left;
 }
 
 #submit-button {
