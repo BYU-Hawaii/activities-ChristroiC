@@ -51,16 +51,20 @@
 
         <section class="game">
             <h2><i class="fas fa-gamepad"></i> Play OX(Tic Tac Toe)</h2>
-            <div id="tic-tac-toe-board">
-                <div class="cell" data-index="0"></div>
-                <div class="cell" data-index="1"></div>
-                <div class="cell" data-index="2"></div>
-                <div class="cell" data-index="3"></div>
-                <div class="cell" data-index="4"></div>
-                <div class="cell" data-index="5"></div>
-                <div class="cell" data-index="6"></div>
-                <div class="cell" data-index="7"></div>
-                <div class="cell" data-index="8"></div>
+            <div id="tic-tac-toe">
+                <div class="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+                <button id="reset">Reset Game</button>
+                <p id="message"></p>
             </div>
             <button id="reset-button">Reset Game</button>
         </section>
@@ -68,6 +72,6 @@
     <footer class="footer">
         <p>&copy; 2024 OXPlay. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="gametic.js"></script>
 </body>
 </html>

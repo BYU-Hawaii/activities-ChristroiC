@@ -20,26 +20,26 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <section class="game">
-            <h2>Tic Tac Toe</h2>
-            <div id="tic-tac-toe-board">
-                <div class="cell" id="cell-0"></div>
-                <div class="cell" id="cell-1"></div>
-                <div class="cell" id="cell-2"></div>
-                <div class="cell" id="cell-3"></div>
-                <div class="cell" id="cell-4"></div>
-                <div class="cell" id="cell-5"></div>
-                <div class="cell" id="cell-6"></div>
-                <div class="cell" id="cell-7"></div>
-                <div class="cell" id="cell-8"></div>
+    <main>
+        <div id="tic-tac-toe">
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
             </div>
-            <button id="reset-button">Reset Game</button>
-        </section>
+            <button id="reset">Reset Game</button>
+            <p id="message"></p>
+        </div>
     </main>
     <footer class="footer">
         <p>&copy; 2024 OXPlay. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="gametic.js"></script>
 </body>
 </html>
